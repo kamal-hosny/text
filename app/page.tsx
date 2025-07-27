@@ -118,19 +118,19 @@ export default function Dashboard() {
   return (
     <main className="bg-white min-h-screen p-6 pt-24">
       {/* Cards */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
         {cardsData.map((card, index) => (
-          <div key={index} className="card bg-[#f8f8f8] rounded-[40px] p-6">
+          <div key={index} className="card bg-[#f8f8f8] h-[214px] w-[389px] rounded-[40px] p-6">
             <div className="head flex justify-between items-center">
-              <span className="font-bold">{card.title}</span>
+              <span className="font-bold text-[12px]">{card.title}</span>
               <span className="h-12 w-12 flex justify-center items-center bg-white rounded-full">
                 {card.icon}
               </span>
             </div>
 
-            <p className="font-extrabold text-[48px] text-[#009877] mt-4">{card.value}</p>
+            <p className="font-extrabold text-[46px] text-[#009877] mt-4">{card.value}</p>
 
-            <div className="flex items-center justify-between mt-4">
+            <div className="flex items-center justify-between ">
               <span></span>
               <div className="bg-black cursor-pointer text-white rounded-full w-10 h-10 flex items-center justify-center">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -143,22 +143,15 @@ export default function Dashboard() {
       </section>
 
       {/* Charts */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
 {/* Line Chart - Enhanced Design */}
 <div className="bg-[#f8f8f8] rounded-[40px] p-6 h-full flex flex-col">
   {/* Header Section */}
   <div className="flex justify-between items-start mb-6">
     <div className="flex flex-col">
-      <h2 className="text-right font-bold text-xl text-[#333]">عدد الزيارات على الموقع الإلكتروني</h2>
-      <p className="text-right text-sm text-gray-500 mt-1">آخر 6 أشهر - تحديث يومي</p>
+      <h2 className="text-right font-bold text-[16px] text-[#333]">عدد الزيارات على الموقع الإلكتروني</h2>
     </div>
-    <div className="flex items-center gap-2 bg-white rounded-full px-3 py-1 shadow-sm">
-      <span className="text-sm text-[#555]">2023</span>
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5.5 6.5L8 4L10.5 6.5" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M5.5 9.5L8 12L10.5 9.5" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    </div>
+ 
   </div>
   
   {/* Chart Container - Full Height */}

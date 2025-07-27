@@ -182,9 +182,9 @@ const Nav = () => {
                 {navItems.map((item, idx) => (
                     <button
                         key={idx}
-                        className={`flex cursor-pointer gap-1.5 flex-row-reverse items-center justify-between w-full py-3 px-4 rounded-full transition-all ${item.active
-                            ? "bg-white text-green-600 shadow-sm"
-                            : "text-gray-700 hover:bg-gray-100"
+                        className={`flex cursor-pointer gap-2 flex-row-reverse text-sm items-center justify-between w-full text-[#5B5B5B] py-3 px-4 rounded-full transition-all ${item.active
+                            && "bg-white text-green-600 "
+                            
                             }`}
                     >
                         <span className="flex-1 text-right font-medium">{item.label}</span>
